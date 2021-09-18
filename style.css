@@ -17,6 +17,7 @@ html {
 * {
   box-sizing: border-box;
 }
+
 .bg-image {
   /* The image used */
   background-image: url("bluegreenwp.jpg");

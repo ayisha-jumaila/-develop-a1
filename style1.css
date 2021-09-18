@@ -10,22 +10,19 @@ body {
 }
 body,
 html {
-  height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
 }
-
 .bg-image {
   /* The image used */
-
   background-image: url("bluegreenwp.jpg");
   /* Add the blur effect */
   filter: blur(8px);
   -webkit-filter: blur(8px);
-
   /* Full height */
   height: 35em;
 
@@ -34,122 +31,225 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.profile-photo {
+  position: absolute;
+  top: 25%;
+  right: 47%;
+  z-index: 2;
+}
 /* Position text in the middle of the page/image */
 .bg-text {
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity/see-through */
+  color: rgb(255, 255, 255);
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 60%;
+  width: 40%;
   padding: 20px;
   text-align: center;
 }
-.bg-image-b {
-  /* The image used */
-
-  background-image: url("bluegreenwp.jpg");
+.sm-icons-top {
+  background-color: none; /* Fallback color */
+  font-size: 2em;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+}
+.bg-text-hobbieslist {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-family: papyrus;
+  font-weight: bold;
+  position: absolute;
+  top: 120%;
+  left: 70%;
+  z-index: 2;
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+}
+.hobbies-undraw {
+  position: absolute;
+  top: 125%;
+  right: 60%;
+  z-index: 2;
+}
+.bg-text-hobbies {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  border: 0px;
+  font-family: papyrus;
+  position: absolute;
+  top: 120%;
+  right: 30%;
+  z-index: 2;
+  width: 10%;
+  padding: 20px;
+  text-align: center;
+}
+.bg-image-hobbieslist {
+  background-image: url("bluegreenwp2.jpg");
+  width: 100%;
+  height: 35em;
   /* Add the blur effect */
   filter: blur(8px);
   -webkit-filter: blur(8px);
-
-  /* Full height */
-  height: 35em;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-footer p {
-  font-family: calibri;
+.bg-image-education {
+  background-image: url("bluegreenwp.jpg");
+  width: 100%;
+  height: 70em;
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-footer p:nth-child(1) {
-  font-size: 30px;
+.education-undraw {
+  position: absolute;
+  top: 235%;
+  left: 68%;
+  z-index: 2;
+}
+.bg-text-educationtable {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-family: papyrus;
   font-weight: bold;
-  color: #191919;
-  line-height: 10px;
-}
-footer p:nth-child(2) {
-  font-size: 16px;
-  color: #7e7d7d;
-  width: 600px;
+  border: 0px;
+  position: absolute;
+  top: 230%;
+  right: 40%;
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
   text-align: center;
 }
-footer {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.bg-text-education {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-family: papyrus;
+  font-weight: bold;
+  border: 0px;
+  position: absolute;
+  top: 299%;
+  left: 60%;
+  z-index: 2;
+  width: 10%;
+  padding: 20px;
+  text-align: center;
 }
-.social-icons a {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e6e3e3;
-  margin: 20px 10px;
-  border-radius: 50%;
+.bg-image-contactme {
+  background-image: url("bluegreenwp2.jpg");
+  width: 100%;
+  height: 35em;
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.social-icons {
-  display: flex;
+.contactme-undraw {
+  position: absolute;
+  top: 410%;
+  right: 68%;
+  z-index: 2;
 }
-.social-icons i,
-.social i {
-  color: #000000;
-}
-.social-icons a:hover {
-  background-color: #000000;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-  transition: all ease 0.5s;
-}
-.social-icons a:hover i,
-.social a:hover i {
-  color: #ffffff;
-  transition: all ease 0.5s;
+.bg-text-contactme {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  border: 0px;
+  font-family: papyrus;
+  position: absolute;
+  top: 400%;
+  right: 50%;
+  width: 8%;
+  padding: 20px;
+  text-align: center;
 }
 
-.copyright {
-  color: #565555;
-  font-size: 12px;
+.bg-text-contactmeform {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-family: papyrus;
+  font-weight: bold;
+  border: 0px;
   position: absolute;
+  top: 406%;
   left: 50%;
-  bottom: 10px;
-  transform: translateX(-50%);
+  width: 45%;
+  padding: 20px;
+  text-align: left;
 }
-.social {
+
+label {
+  display: block;
+}
+.sm-icons-bottom {
+  background-color: none; /* Fallback color */
+  font-size: 2em;
+  position: absolute;
+  top: 510%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+}
+.bg-image-footer {
+  background-image: url("bluegreenwp.jpg");
+  width: 100%;
+  height: 23em;
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(7px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon-bar {
   position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
   top: 50%;
-  right: 0px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.social a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  margin: 0px;
-  padding: 0px;
-  line-height: 0px;
-  background-color: #ffffff;
-  border: 1px solid #cbcbcb;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-}
-.social a:hover {
-  background-color: #000000;
-  transition: all ease 0.5s;
-}
-.social i {
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: rgb(255, 255, 255);
   font-size: 20px;
-  color: #2b2b2b;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: rgb(0, 32, 0); /* Add a hover color */
 }
